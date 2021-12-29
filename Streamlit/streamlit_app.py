@@ -20,7 +20,7 @@ import xgboost
 
 PATH = 'EDA/EDA_Wish.csv'
 DATA_RAW = 'EDA/Data Raw.csv'
-filename = 'Model/KNN .sav'
+filename = 'Model/XGBoostClassifier.save_model'
 
 def set_home():
     home = '''
@@ -120,40 +120,39 @@ def set_home():
     st.write(columns_information, unsafe_allow_html=True)
     st.write(data_source,unsafe_allow_html=True )
 
-# def set_eda():
-#     dataset = pd.read_csv('EDA/Dataset_Wish.csv')
-#     data_raw = pd.read_csv(DATA_RAW)
+def set_eda():
+    dataset = pd.read_csv('EDA/Dataset_Wish.csv')
+    data_raw = pd.read_csv(DATA_RAW)
 
-#     # Show dataframe
-#     data_selection = st.radio(
-#         "Data Selection",
-#         ('Raw Data', 'Cleaned Data'),
-#         help='Data source that will be displayed in the charts')
-#     if data_selection == 'Raw Data':
-#         with st.container():
-#             st.header('Descriptive Statistics\n')
-#             st.table(data_raw.describe())
+    # Show dataframe
+    data_selection = st.radio(
+        "Data Selection",
+        ('Raw Data', 'Cleaned Data'),
+        help='Data source that will be displayed in the charts')
+    if data_selection == 'Raw Data':
+        with st.container():
+            st.header('Descriptive Statistics\n')
+            st.table(data_raw.describe())
         
-#     else:
-#         with st.container():
-#             st.header('Descriptive Statistics\n')
-#             st.table(dataset.describe())
+    else:
+        with st.container():
+            st.header('Descriptive Statistics\n')
+            st.table(dataset.describe())
 
-#     st.header('Data Visualization')
-#     height, width, margin = 450, 1500, 10
+    st.header('Data Visualization')
+    height, width, margin = 450, 1500, 10
 
-#     st.subheader('Scatterplot')
+    st.subheader('Scatterplot')
 
-#     select_numerical = st.selectbox(
-#         'Select the Numerical Variable',
-#         ['discount_price', 'retail_price'])
-#     fig = sns.histplot(data=dataset, x="retail_price")
-    
+    select_numerical = st.selectbox(
+        'Select the Numerical Variable',
+        ['discount_price', 'retail_price'])
+    fig = sns.histplot(data=dataset, x="retail_price")
 
 def load_model():
-    loaded_model = pickle.load(open(filename, 'rb'))
-    # loaded_model = xgboost.XGBClassifier()
-    # loaded_model.load_model(filename)
+    # loaded_model = pickle.load(open(filename, 'rb'))
+    loaded_model = xgboost.XGBClassifier()
+    loaded_model.load_model(filename)
     return loaded_model
     
 def set_predict():
@@ -261,9 +260,9 @@ menu = st.sidebar.selectbox('Select view', ('Home',
 def main():
     if menu == 'Home':
         set_home()
-    # elif menu == 'Exploratory Data Analysis':ß
-    #     set_eda()
-    elif menu == 'Predict your number cart':
+    elif menu == 'Exploratory Data Analysis':
+        set_eda()
+    elif menu == 'Predict your customers cart':
         set_predict()
         # model_predict()
 
