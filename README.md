@@ -1,13 +1,12 @@
-# EDA_Wish_Ecommerce
-
-**BACKGROUND**
+# **BACKGROUND**
 
 **Wish** is operated by ContextLogic Inc. in [San Francisco](https://en.wikipedia.org/wiki/San_Francisco), United States. The platform employs browsing technologies that personalize shopping visually for each customer, rather than relying on a search bar format. It allows sellers to list their products on Wish and sell directly to consumers. Wish works with payment service providers to handle payments and does not stock the products themselves or manage returns.
 
 **Wish** is an American online [e-commerce](https://en.wikipedia.org/wiki/E-commerce) platform that facilitates transactions between sellers and buyers. Wish was founded in 2010 by [Piotr Szulczewski](https://en.wikipedia.org/wiki/Piotr_Szulczewski) (CEO) and Danny Zhang (former CTO).
 
 
-**Dataset Information**
+# **Dataset Information**
+
 - **About data**
     - The data comes from the Wish platform, an e-commerce site that is famous for selling items at affordable prices. This dataset contains product listings as well as products **ratings** and **sales performance.**
     - The data was scraped in the ***french localisation*** (hence some non-ascii Latin characters such as « é » and « à ») in the title column.
@@ -62,5 +61,5 @@
     44. `**crawl_month:**` for info only
 
 
-**Data source**
+# **Data source**
 https://www.kaggle.com/jmmvutu/summer-products-and-sales-in-ecommerce-wish
