@@ -85,7 +85,7 @@ https://www.kaggle.com/jmmvutu/summer-products-and-sales-in-ecommerce-wish
 
 # **Solution Statement**
     
-    To be more specific, the solution statement is to create a machine learning model that can forecast the sale volume of the merchant in Wish e-commerce by the classification algorithm, which has 7 classes followed in order by 100, 1.000, 5.000, 10.000, 20.000, 50.000, 100.000.
+To be more specific, the solution statement is to create a machine learning model that can forecast the sale volume of the merchant in Wish e-commerce by the classification algorithm, which has 7 classes followed in order by 100, 1.000, 5.000, 10.000, 20.000, 50.000, 100.000.
     
     Before that, we will explore data and answer a few questions to know deeply about this dataset.
     
