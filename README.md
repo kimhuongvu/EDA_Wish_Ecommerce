@@ -15,50 +15,50 @@
     
     There are 44 columns in the dataset:
     
-    - `**title_orig**`: contains the original title (the base title) that is displayed by default
-    - `**price`:** the price you would pay to get the product 
-    - `**retail_price`:** retail price, or reference price in other stores/places. Used by the seller to indicate a regular value or the price before discount
-    - `**retail_price_currency` :** discount price in currency
-    - `**discount_price`:** discount price
-    - `**discount_currency`:** currency of discount
-    - `**currency_buyer`:** currency of the prices
-    - `**units_sold`:** number of units sold. Lower bound approximation by steps
-    - `**uses_ad_boost`:** whether the seller paid to boost his product within the platform (highlighting, better placement, or whatever).
-    - `**rating`:** mean product rating
-    - `**rating_count`:** total number of ratings of the product
-    - `**rating_five_count` :** number of 5-star ratings 
-    - `**rating_four_count` :** number of 4-star ratings 
-    - `**rating_three_count` :** number of 3-star ratings 
-    - `**rating_two_count` :** number of 2-star ratings 
-    - `**rating_one_count` :** number of 1-star ratings 
-    - `**badges_count`:** number of badges the product or the seller has
-    - `**badges_local_product`:** a badge that denotes the product is a local product. Conditions may vary (being produced locally, or something else). Some people may prefer buying local products rather than. 1 means Yes, has the badge.
-    - `**badges_product_quality`:** badge awarded when many buyers consistently gave good evaluations 1 means Yes, has the badge
-    - `**badges_fast_shipping`:** badge awarded when this product's order is consistently shipped rapidly
-    - `**tags`:** tags set by the seller
-    - `**product_color`:** product's main color
-    - `**product_variation_size_id`:** one of the available size variations for this product
-    - `**product_variation_inventory`:** inventory the seller has. Max allowed quantity is 50
-    - `**shipping_option_name`:** type of shipping *(Livraison standard,Standard Shipping,...)*
-    - `**shipping_option_price`:** shipping price
-    - `**shipping_is_express`:** whether the shipping is express or not. 1 for True
-    - `**countries_shipped_to`:** number of countries this product is shipped to. Sellers may choose to limit where they ship a product to
-    - `**inventory_total**`: total inventory for all the product's variations (size/color variations for instance)
-    - `**has_urgency_banner**`: total inventory for all the product's variations (size/color variations for instance)
-    - `**urgency_text**`: a text banner that appears over some products in the search results.
-    - `**origin_country**`: seller location
-    - `**merchant_title**`: merchant's displayed name (show in the UI as the seller's shop name)
-    - `**merchant_name**`: merchant's canonical name. A name not shown publicly. Used by the website under the hood as a canonical name. Easier to process since all lowercase without white space
-    - `**merchant_info_subtitle**`: the subtitle text as shown on a seller's info section to the user. (raw, not preprocessed). The website shows this to the user to give an overview of the seller's stats to the user. Mostly consists of `% <positive_feedbacks> (<rating_count> reviews)` written in French
-    - `**merchant_rating_sell**`: number of ratings of this seller
-    - `**merchant_id**`: merchant unique id
-    - `**merchant_has_profile_picture**`: convenience boolean that says whether there is a `merchant_profile_picture` URL
-    - `**merchant_profile_picture**`: custom profile picture of the seller (if the seller has one). Empty otherwise.
-    - `**product_url**`: URL to the product page. You may need to log in to access it
-    - `**product_picture`:** URL
-    - `**product_id**`: product identifier. You can use this key to remove duplicate entries if you're not interested in studying them.
-    - `**theme**`: the search term used in the search bar of the website to get these search results.
-    - `**crawl_month:**` for info only
+    - `title_orig`: contains the original title (the base title) that is displayed by default
+    - `price`: the price you would pay to get the product 
+    - `retail_price`: retail price, or reference price in other stores/places. Used by the seller to indicate a regular value or the price before discount
+    - `retail_price_currency` : discount price in currency
+    - `discount_price`: discount price
+    - `discount_currency`: currency of discount
+    - `currency_buyer`: currency of the prices
+    - `units_sold`: number of units sold. Lower bound approximation by steps
+    - `uses_ad_boost`: whether the seller paid to boost his product within the platform (highlighting, better placement, or whatever).
+    - `rating`: mean product rating
+    - `rating_count`: total number of ratings of the product
+    - `rating_five_count` : number of 5-star ratings 
+    - `rating_four_count` : number of 4-star ratings 
+    - `rating_three_count` : number of 3-star ratings 
+    - `rating_two_count` : number of 2-star ratings 
+    - `rating_one_count` : number of 1-star ratings 
+    - `badges_count`: number of badges the product or the seller has
+    - `badges_local_product`: a badge that denotes the product is a local product. Conditions may vary (being produced locally, or something else). Some people may prefer buying local products rather than. 1 means Yes, has the badge.
+    - `badges_product_quality`: badge awarded when many buyers consistently gave good evaluations 1 means Yes, has the badge
+    - `badges_fast_shipping`: badge awarded when this product's order is consistently shipped rapidly
+    - `tags`: tags set by the seller
+    - `product_color`: product's main color
+    - `product_variation_size_id`: one of the available size variations for this product
+    - `product_variation_inventory`: inventory the seller has. Max allowed quantity is 50
+    - `shipping_option_name`: type of shipping *(Livraison standard,Standard Shipping,...)*
+    - `shipping_option_price`: shipping price
+    - `shipping_is_express`: whether the shipping is express or not. 1 for True
+    - `countries_shipped_to`: number of countries this product is shipped to. Sellers may choose to limit where they ship a product to
+    - `inventory_total`: total inventory for all the product's variations (size/color variations for instance)
+    - `has_urgency_banner`: total inventory for all the product's variations (size/color variations for instance)
+    - `urgency_text`: a text banner that appears over some products in the search results.
+    - `origin_country`: seller location
+    - `merchant_title`: merchant's displayed name (show in the UI as the seller's shop name)
+    - `merchant_name`: merchant's canonical name. A name not shown publicly. Used by the website under the hood as a canonical name. Easier to process since all lowercase without white space
+    - `merchant_info_subtitle`: the subtitle text as shown on a seller's info section to the user. (raw, not preprocessed). The website shows this to the user to give an overview of the seller's stats to the user. Mostly consists of `% <positive_feedbacks> (<rating_count> reviews)` written in French
+    - `merchant_rating_sell`: number of ratings of this seller
+    - `merchant_id`: merchant unique id
+    - `merchant_has_profile_picture`: convenience boolean that says whether there is a `merchant_profile_picture` URL
+    - `merchant_profile_picture`: custom profile picture of the seller (if the seller has one). Empty otherwise.
+    - `product_url`: URL to the product page. You may need to log in to access it
+    - `product_picture`: URL
+    - `product_id`: product identifier. You can use this key to remove duplicate entries if you're not interested in studying them.
+    - `theme`: the search term used in the search bar of the website to get these search results.
+    - `crawl_month:` for info only
 
 
 # **Data source**
@@ -89,10 +89,9 @@ https://www.kaggle.com/jmmvutu/summer-products-and-sales-in-ecommerce-wish
     
     Before that, we will explore data and answer a few questions to know deeply about this dataset.
     
-    <aside>
-    🕡 **A** **BIG QUESTION**: **What are the elements that help the new seller increase their sales?**
+  
+   **BIG QUESTION: What are the elements that help the new seller increase their sales?**
     
-    </aside>
     
     - What is the difference between the 'price' from 'retail price' and how is the effect of the units sold?
     - Does having ad boosts increase success?
