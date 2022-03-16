@@ -1,6 +1,6 @@
 # EDA_Wish_Ecommerce
 
-**Background**
+**BACKGROUND**
 
 **Wish** is operated by ContextLogic Inc. in [San Francisco](https://en.wikipedia.org/wiki/San_Francisco), United States. The platform employs browsing technologies that personalize shopping visually for each customer, rather than relying on a search bar format. It allows sellers to list their products on Wish and sell directly to consumers. Wish works with payment service providers to handle payments and does not stock the products themselves or manage returns.
 
