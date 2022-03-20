@@ -64,9 +64,9 @@
 # **Data source**
 https://www.kaggle.com/jmmvutu/summer-products-and-sales-in-ecommerce-wish
 
-## **Define problems**
+# **Define problems**
 
-- **Problem Statement**
+- **Problem statement**
     
     Increasing penetration of the internet is bolstering the smartphone using population across the world. Digital content, travel and leisure, financial services, e-tailing among others constitute a variety of e-commerce options available to the internet accessing customer base that are gaining momentum with increased internet usage.
     
@@ -83,7 +83,7 @@ https://www.kaggle.com/jmmvutu/summer-products-and-sales-in-ecommerce-wish
 - Wish **sells** about **three million items** daily
 - Wish main demographic is **young and middle class** ([Cnet](https://www.cnet.com/news/shopping-app-wish-is-building-a-retail-empire-on-2-sunglasses/))
 
-# **Solution Statement**
+# **Solution statement**
     
 To be more specific, the solution statement is to create a machine learning model that can forecast the sale volume of the merchant in Wish e-commerce by the classification algorithm, which has 7 classes followed in order by 100, 1.000, 5.000, 10.000, 20.000, 50.000, 100.000.
     
@@ -101,15 +101,40 @@ Before that, we will explore data and answer a few questions to know deeply abou
 - How does shipping affect sales?
 - What is the price difference between countries?
 
-# Data Describe
+# Data describe
+
+<img width="541" alt="Screen Shot 2022-03-20 at 14 21 46" src="https://user-images.githubusercontent.com/89019339/159152621-19869231-9233-41f9-8b04-7c345109455a.png">
+
 - The data set has 7206 rows and 44 columns.
     - 18 categorical columns and 26 numerical columns.
     - 10 columns has Nan values over than 50% dataset.
 
 - Unlogic data:
-    - Discount_price and retail price =0
-    - Rating_count = 0, BUT rating = 5
+    - Discount_price and retail price = 0
+    - Rating_count = 0, BUT rating average = 5
     - Merchant_rating_count = 0 , BUT merchant_rating = 5
+  
+<img width="807" alt="Screen Shot 2022-03-20 at 14 27 19" src="https://user-images.githubusercontent.com/89019339/159152646-06170879-5bc2-4ad6-adfb-0f41b8dd43db.png">
 
+# Interesting insight of dataset  
 
+<img width="939" alt="Screen Shot 2022-03-20 at 14 35 00" src="https://user-images.githubusercontent.com/89019339/159152823-25a33dce-ee30-4d89-9ecc-c9fde617fede.png">
+
+<img width="939" alt="Screen Shot 2022-03-20 at 14 36 30" src="https://user-images.githubusercontent.com/89019339/159152863-7c50e8aa-988c-4942-824d-1200c55cb1b0.png">
+
+<img width="939" alt="Screen Shot 2022-03-20 at 14 37 03" src="https://user-images.githubusercontent.com/89019339/159152887-33196cc4-326b-4fa8-b68d-7854523b48e0.png">
+
+<img width="939" alt="Screen Shot 2022-03-20 at 14 37 56" src="https://user-images.githubusercontent.com/89019339/159152910-30e432e4-fe2a-4eac-a18d-489289705b30.png">
+
+In order to increase sales, the new sellers can learn sales strategies, or strategies to increase performance, from these groups of sellers.
+
+<img width="939" alt="Screen Shot 2022-03-20 at 14 39 35" src="https://user-images.githubusercontent.com/89019339/159152973-b84d4065-2bbe-47e7-b8bd-64706d8d600c.png">
+
+Keeping a rating of 3 stars or more will help new sellers increase the frequency of appearing on the e-commerce platform.
+
+<img width="939" alt="Screen Shot 2022-03-20 at 14 41 31" src="https://user-images.githubusercontent.com/89019339/159153010-6fcddba9-5eb5-4243-910d-0587f49608af.png">
+
+For WISH e-commerce at the time of analysis, the actual shipping price did not affect the customer's level of purchase.
+
+<img width="939" alt="Screen Shot 2022-03-20 at 14 44 13" src="https://user-images.githubusercontent.com/89019339/159153097-2459ff76-bc45-4ea5-aa1f-c2bd32ce9292.png">
 
