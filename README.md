@@ -140,3 +140,4 @@ For WISH e-commerce at the time of analysis, the actual shipping price did not a
 
 <img width="939" alt="Screen Shot 2022-03-20 at 14 44 13" src="https://user-images.githubusercontent.com/89019339/159153097-2459ff76-bc45-4ea5-aa1f-c2bd32ce9292.png">
 
+***For more detail about presentation' slides***: https://docs.google.com/presentation/d/1OQNQNKq0uk39T9tINqzk_8zDSOyPiQEZ/edit#slide=id.p13
