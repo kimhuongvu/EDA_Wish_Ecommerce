@@ -124,6 +124,8 @@ Before that, we will explore data and answer a few questions to know deeply abou
 
 <img width="939" alt="Screen Shot 2022-03-20 at 14 37 03" src="https://user-images.githubusercontent.com/89019339/159152887-33196cc4-326b-4fa8-b68d-7854523b48e0.png">
 
+It seems that products with the keyword 'women or woman' are the most popular summer on WISH platform.
+
 <img width="939" alt="Screen Shot 2022-03-20 at 14 37 56" src="https://user-images.githubusercontent.com/89019339/159152910-30e432e4-fe2a-4eac-a18d-489289705b30.png">
 
 In order to increase sales, the new sellers can learn sales strategies, or strategies to increase performance, from these groups of sellers.
