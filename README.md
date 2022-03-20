@@ -91,16 +91,25 @@ Before that, we will explore data and answer a few questions to know deeply abou
    
   
    **BIG QUESTION: What are the elements that help the new seller increase their sales?**
-    
-    
-- What is the difference between the 'price' from 'retail price' and how is the effect of the units sold?
-- Does having ad boosts increase success?
-- Is there any correlation between units sold and ratings?
-- Does a badge contribute to the sales of a product? What is the effect of different types of badges?
-- Do increased variations lead to increased success?
-- How does shipping affect sales?
-- Which tags should merchants use?
-- Does seller location affect sales?
+       
+
+- What is the difference between the 'price' from 'retail price' ?
+- How does price effect on the sale volume?
+- Who is the audience that seller pay attention?
 - What kind of merchants is likely to gain product success?
-- Do all product contains pictures?
-- What about the details of the merchant? Does not having a profile picture reduce success? Perhaps detailed info leads to higher success?
+- Does rating affects the success of the merchant?
+- How does shipping affect sales?
+- What is the price difference between countries?
+
+# Data Describe
+- The data set has 7206 rows and 44 columns.
+    - 18 categorical columns and 26 numerical columns.
+    - 10 columns has Nan values over than 50% dataset.
+
+- Unlogic data:
+    - Discount_price and retail price =0
+    - Rating_count = 0, BUT rating = 5
+    - Merchant_rating_count = 0 , BUT merchant_rating = 5
+
+
+
